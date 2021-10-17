@@ -1,4 +1,4 @@
-# [booker]
+# booker
 The booker app makes the sheet of book details and return json for a book details which you want to search using The New York Times API
 
 
@@ -13,13 +13,20 @@ The booker app makes the sheet of book details and return json for a book detail
 
 
 ## Requirements & Configuration
-- NodeJS
+1. NodeJS
 [Download the Node.js source code or a pre-built installer for your platform](https://nodejs.org/en/download/)
- `npm init`
- 
-- Module Installation:
-- ***Xlsx*** `npm install xlsx`
-- ***request*** `npm install request`
+  ```
+  npm init
+```
+2. Module Installation:
+- ***Xlsx***
+```
+npm install xlsx
+```
+- ***request***
+```
+npm install request
+```
 
 
 ### MIT Licence
