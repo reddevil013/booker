@@ -22,13 +22,16 @@ function jsonOtSheet() {
     }
     else {
       body = JSON.parse(body);
+      let i = 0
       for (let list_name of body.results.lists){
         // Reading our test file
+
         const file = reader.readFile('./test.xlsx');
         const ws = reader.utils.json_to_sheet(list_name.books);
-        reader.utils.book_append_sheet(file,ws,`${list_name.list_name_encoded}`);
+        reader.utils.book_append_sheet(file,ws,`${"list"+i}`);
         // Writing to our file
-        reader.writeFile(file,'./test.xlsx');
+        reader.writeFile(file,'./test.xlsx')
+        i++
       }
     }
   });
@@ -49,11 +52,11 @@ function execute(bookName) {
   // request data form api
   request(options, function (err, res, body) {
     if (err) {
-      console.log(err);
+      
       return err;
     }
     else {
-      console.log(body);
+
       return body;
     }
   });

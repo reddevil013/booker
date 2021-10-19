@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "requset": "0.0.1-security"
+    "request": "^2.88.2",
+    "requset": "0.0.1-security",
+    "xlsx": "^0.17.3"
   }
 }
